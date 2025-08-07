@@ -1,43 +1,51 @@
 export const metadata = { title: "Forever Chemicals (PFAS) — Montevallo" };
 
-function Callout({ children }) {
-  return <div className="rounded-xl border-l-4 pl-4 py-3 my-6">{children}</div>;
+function Attribution() {
+  return <p className="mt-10 text-sm opacity-75">Prepared by <strong>Dr. Rod Macpherson</strong>.</p>;
 }
 
 export default function PFASPage() {
   return (
-    <>
-      <h1 className="text-4xl font-bold mb-3">Forever Chemicals (PFAS)</h1>
-      <p className="text-lg mb-6">
-        PFAS are industrial chemicals that don’t break down easily and can remain in water, soil,
-        and our bodies for years. This page summarizes the risks and our plan to protect families in Montevallo.
+    <main className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-3">Forever Chemicals (PFAS)</h1>
+      <p className="mb-4">
+        PFAS build up in water, soil, and our bodies. Research links exposure to developmental,
+        reproductive, metabolic, and cancer risks. They don’t go away on their own—and families
+        shouldn’t wait years for basic transparency.
       </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">What to know</h2>
-      <ul className="list-disc ml-6 space-y-2">
-        <li>They persist for decades and are hard to remove once in our bodies or water.</li>
-        <li>Health impacts vary by age and sex; children are especially vulnerable.</li>
-        <li>Recent state water reports indicate PFAS detections in Montevallo’s drinking water.</li>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Who’s most vulnerable</h2>
+      <ul className="list-disc ml-6 space-y-1">
+        <li><strong>Pregnancy & infants:</strong> PFAS can cross the placenta and be present in breast milk.</li>
+        <li><strong>Children & teens:</strong> developmental, metabolic, liver, and cardiovascular concerns.</li>
+        <li><strong>Women:</strong> reproductive health and several cancers are of elevated concern.</li>
+        <li><strong>Men:</strong> raised risks reported for testicular, kidney, and thyroid cancers.</li>
       </ul>
 
-      <Callout>
-        <strong>Our commitment:</strong> full transparency, independent testing, rapid public notices,
-        and a remediation plan that prioritizes families, farmers, and small businesses.
-      </Callout>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Montevallo: the gap</h2>
+      <p className="mb-3">
+        State water reports and local records indicate PFAS detections and policy decisions
+        that affect exposure. Yet City Hall has not published a dated, funded plan to remove PFAS
+        from finished water or to notify residents proactively. That’s the problem to fix.
+      </p>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">Action plan</h2>
-      <ol className="list-decimal ml-6 space-y-2">
-        <li>Publish plain-language water summaries with links to underlying state reports.</li>
-        <li>Commission additional testing for a broader set of PFAS beyond the minimal panel.</li>
-        <li>Work with farmers and utilities on sludge handling that doesn’t shift harm elsewhere.</li>
-        <li>Adopt a “right-to-know” standard: proactive alerts before risky activities.</li>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">What we’ll do</h2>
+      <ol className="list-decimal ml-6 space-y-1">
+        <li>Publish plain-English water summaries with links to the source reports.</li>
+        <li>Order broader PFAS testing (beyond the minimum panel) and post every result.</li>
+        <li>Adopt sludge (biosolids) handling that doesn’t shift harm to farms/food.</li>
+        <li>Implement a “right-to-know” policy: advance notice before risky activities.</li>
       </ol>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-3">Sources & reading</h2>
-      <ul className="list-disc ml-6">
-        <li>State water quality reports (ADEM e-files)</li>
-        <li>Public health literature summaries</li>
-      </ul>
-    </>
+      <div className="mt-8 rounded-xl border p-4">
+        <h3 className="font-semibold mb-1">Sources & documents</h3>
+        <ul className="list-disc ml-6">
+          <li><a className="underline" href="/records">Records & Timeline (2019–2025)</a></li>
+          <li><a className="underline" href="/docs/Forever-Chemicals.pdf">Full PFAS write-up (PDF)</a></li>
+        </ul>
+      </div>
+
+      <Attribution />
+    </main>
   );
 }
