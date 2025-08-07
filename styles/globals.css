@@ -1,0 +1,7 @@
+/* app/globals.css (or styles/globals.css) */
+@import "tailwindcss";
+
+/* — your custom globals here — */
+body {
+  /* e.g. default bg/text colors */
+}
