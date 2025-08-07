@@ -1,5 +1,5 @@
 // campaignsite/app/layout.js
-import "./globals.css";               // your Tailwind import file
+import "./styles/globals.css";               // your Tailwind import file
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
