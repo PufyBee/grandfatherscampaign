@@ -9,40 +9,38 @@ export default function WaterPage() {
     <div className="mx-auto max-w-3xl px-4">
       <h1 className="text-3xl font-bold mb-3">Water & PFAS</h1>
       <p className="mb-6">
-        A focused explainer you can read in two minutes. No jargon. Just what
-        matters for families here.
+        A two-minute guide for families and neighbors. Clear, brief, and useful.
       </p>
 
-      <h2 className="text-2xl font-semibold mb-2">PFAS basics</h2>
+      <h2 className="text-2xl font-semibold mb-2">Basics</h2>
       <ul className="list-disc ml-6 space-y-2">
-        <li>PFAS = “forever chemicals.” They persist in water, soil, and our bodies.</li>
+        <li>PFAS are durable chemicals; they do not break down easily.</li>
+        <li>They can cycle through wastewater and sludge into the broader environment.</li>
+        <li>Removing PFAS from finished drinking water requires targeted treatment.</li>
+      </ul>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-2">How removal works</h2>
+      <ul className="list-disc ml-6 space-y-2">
         <li>
-          They travel through wastewater and can re-enter the environment via
-          sludge (“biosolids”).
+          Common approaches include granular activated carbon, ion exchange, or membrane systems.
         </li>
         <li>
-          Removing PFAS from finished drinking water requires specific treatment
-          (e.g., granular activated carbon or membranes).
+          Effectiveness depends on proper sizing, contact time, maintenance, and disposal of spent media.
+        </li>
+        <li>
+          Utilities that publish schedules and results make it easier for residents to follow progress.
         </li>
       </ul>
 
-      <h2 className="text-2xl font-semibold mt-8 mb-2">Health picture (short version)</h2>
+      <h2 className="text-2xl font-semibold mt-8 mb-2">Everyday takeaways</h2>
       <ul className="list-disc ml-6 space-y-2">
-        <li>Pregnancy/infants and children are most vulnerable to lasting effects.</li>
-        <li>Adults face elevated risks reported for several cancers and thyroid problems.</li>
+        <li>Pregnancy, infants, and children warrant special attention.</li>
+        <li>Adults may face higher risks reported for several cancers and thyroid issues.</li>
+        <li>Clear public notice and plain summaries help everyone make good decisions.</li>
       </ul>
-
-      <h2 className="text-2xl font-semibold mt-8 mb-2">What a real plan looks like</h2>
-      <ol className="list-decimal ml-6 space-y-2">
-        <li>Dates and dollars for treatment — not vague intentions.</li>
-        <li>Monthly public dashboards with all PFAS results, explained plainly.</li>
-        <li>Independent testing and verification posted online.</li>
-        <li>Sludge policy that prevents PFAS cycling back into food and water.</li>
-      </ol>
 
       <p className="mt-8 text-sm opacity-80">
-        Prepared by <strong>Dr. Rod Macpherson</strong>. This page summarizes
-        public health concerns in accessible language.
+        Prepared by Dr. Rod Macpherson. This page condenses public health guidance in everyday language.
       </p>
     </div>
   );

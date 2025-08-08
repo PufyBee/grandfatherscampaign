@@ -9,63 +9,50 @@ export default function RecordsPage() {
     <div className="mx-auto max-w-3xl px-4">
       <h1 className="text-3xl font-bold mb-3">Records & Timeline (2019–2025)</h1>
       <p className="mb-6">
-        A clear, sourced summary of campaign statements and subsequent actions
-        affecting water, notice, sludge, zoning, and flooding. Written for
-        residents, not lawyers.
+        What was promised, what appears in public documents, and how it affects water, notice,
+        sludge, zoning, and flooding. Straightforward and neighbor-friendly.
       </p>
 
       <section className="mt-4">
-        <h2 className="text-2xl font-semibold mb-2">Promises vs. outcomes</h2>
+        <h2 className="text-2xl font-semibold mb-2">Promises and outcomes</h2>
         <ul className="list-disc ml-6 space-y-2">
           <li>
-            <strong>Transparency:</strong> Promised frequent, understandable
-            updates. Outcome: sporadic, technical notices many residents miss.
+            <strong>Public communication:</strong> residents were told to expect regular, easy-to-understand updates.
+            In practice, notices have often been technical and irregular.
           </li>
           <li>
-            <strong>Fiscal accountability:</strong> Disputes over scope/cost of
-            deeper audits; no public PFAS treatment budget with dates.
+            <strong>Fiscal planning:</strong> deeper review was discussed; budget documents do not
+            yet list a funded PFAS treatment timeline.
           </li>
           <li>
-            <strong>Public safety notices:</strong> Residents not consistently
-            informed before activities with health implications (e.g., demolition).
+            <strong>Notices that come before risk:</strong> records reflect instances where notice arrived late or was hard to follow.
           </li>
         </ul>
       </section>
 
       <section className="mt-8">
-        <h2 className="text-2xl font-semibold mb-2">Selected timeline</h2>
+        <h2 className="text-2xl font-semibold mb-2">Short timeline</h2>
         <ul className="list-disc ml-6 space-y-2">
           <li>PFAS detections appear in state water reports for Montevallo.</li>
-          <li>
-            Sludge/biosolids handling raises food-pathway concerns for families
-            and farmers.
-          </li>
-          <li>
-            Construction/demolition decisions highlight gaps in proactive public
-            notice.
-          </li>
-          <li>
-            Zoning/runoff issues contribute to flooding concerns for residents
-            downstream.
-          </li>
+          <li>Sludge handling raises concerns about movement of PFAS onto fields and into food pathways.</li>
+          <li>Construction and demolition decisions show gaps in proactive, plain-language notice.</li>
+          <li>Zoning and runoff issues relate to flooding worries downstream.</li>
         </ul>
         <p className="mt-3 opacity-80">
-          This timeline condenses details from longer write-ups by Dr. Rod
-          Macpherson and public records.
+          These points summarize documents reviewed by Dr. Rod Macpherson and public records. They are summaries, not legal findings.
         </p>
       </section>
 
       <section className="mt-8 p-4 border rounded-xl bg-gray-50">
-        <h3 className="text-xl font-semibold mb-2">The accountability question</h3>
+        <h3 className="text-xl font-semibold mb-2">The key question</h3>
         <p>
-          Why hasn’t City Hall published a dated, funded plan to remove PFAS from
-          finished water — while other Alabama systems have already moved toward
-          treatment or pilots?
+          Where is the public, dated, and funded plan for PFAS treatment, along with a monthly summary page
+          that reports progress in plain language?
         </p>
       </section>
 
       <p className="mt-8 text-sm opacity-80">
-        Prepared by <strong>Dr. Rod Macpherson</strong>. Sources available on request.
+        Prepared by Dr. Rod Macpherson. Sources available on request.
       </p>
     </div>
   );
