@@ -1,4 +1,8 @@
-export const metadata = { title: "Clean Water. Clear Answers. | Montevallo Water Facts" };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Clean Water. Clear Answers. | Montevallo Water Facts",
+};
 
 export default function Page() {
   return (

@@ -1,12 +1,13 @@
 import "../styles/globals.css";
 import Navbar from "../components/Navbar";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Montevallo Water Facts",
   description: "Plain-language PFAS information for Montevallo residents.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body className="bg-white text-gray-900">
@@ -15,7 +16,9 @@ export default function RootLayout({ children }) {
             <Navbar />
           </div>
         </header>
+
         <main className="mx-auto max-w-3xl px-4 py-10">{children}</main>
+
         <footer className="mt-16 border-t">
           <div className="mx-auto max-w-3xl px-4 py-6 text-sm opacity-80">
             Prepared by <strong>Dr. Rod Macpherson</strong>. This site summarizes public records and observations in clear, accessible language.

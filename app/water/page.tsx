@@ -1,8 +1,12 @@
-export const metadata = { title: "Water & PFAS | Montevallo Water Facts" };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Water & PFAS | Montevallo Water Facts",
+};
 
 export default function WaterPage() {
   return (
-    <main className="mx-auto max-w-3xl px-4 py-10">
+    <>
       <h1 className="text-3xl font-bold mb-3">Water & PFAS</h1>
       <p className="mb-6">
         A focused explainer you can read in two minutes. No jargon. Just what matters for families here.
@@ -32,6 +36,6 @@ export default function WaterPage() {
       <p className="mt-8 text-sm opacity-80">
         Prepared by <strong>Dr. Rod Macpherson</strong>. This page summarizes public health concerns in accessible language.
       </p>
-    </main>
+    </>
   );
 }

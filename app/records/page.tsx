@@ -1,4 +1,8 @@
-export const metadata = { title: "Records (2019–2025) | Montevallo Water Facts" };
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Records (2019–2025) | Montevallo Water Facts",
+};
 
 export default function RecordsPage() {
   return (
