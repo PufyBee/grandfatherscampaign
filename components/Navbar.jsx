@@ -1,12 +1,11 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
   { href: "/water", label: "Water" },
-  { href: "/records", label: "Records" },
+  { href: "/records", label: "Promises & Outcomes" }, // <- updated label
 ];
 
 export default function Navbar() {
@@ -16,11 +15,7 @@ export default function Navbar() {
       {links.map(({ href, label }) => {
         const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
         return (
-          <Link
-            key={href}
-            href={href}
-            className={`py-2 ${active ? "font-semibold underline" : "hover:underline"}`}
-          >
+          <Link key={href} href={href} className={`py-2 ${active ? "font-semibold underline" : "hover:underline"}`}>
             {label}
           </Link>
         );

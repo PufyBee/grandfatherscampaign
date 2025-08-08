@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Records (2019–2025) | Montevallo Water Facts",
+  title: "Promises & Outcomes (2019–2025) | Montevallo Water Facts",
 };
 
 export default function RecordsPage() {
   return (
     <div className="mx-auto max-w-3xl px-4">
-      <h1 className="text-3xl font-bold mb-3">Records & Timeline (2019–2025)</h1>
+      <h1 className="text-3xl font-bold mb-3">Promises & Outcomes (2019–2025)</h1>
       <p className="mb-6">
-        What was promised, what appears in public documents, and how it affects water, notice,
-        sludge, zoning, and flooding. Straightforward and neighbor-friendly.
+        What was promised, what appears in public documents, and how it affects water, notice, sludge, zoning,
+        and flooding. Straightforward and neighbor-friendly.
       </p>
 
       <section className="mt-4">
@@ -21,11 +21,11 @@ export default function RecordsPage() {
             In practice, notices have often been technical and irregular.
           </li>
           <li>
-            <strong>Fiscal planning:</strong> deeper review was discussed; budget documents do not
-            yet list a funded PFAS treatment timeline.
+            <strong>Fiscal planning:</strong> deeper review was discussed; budget documents do not yet list a
+            funded PFAS treatment timeline.
           </li>
           <li>
-            <strong>Notices that come before risk:</strong> records reflect instances where notice arrived late or was hard to follow.
+            <strong>Notices before risk:</strong> records reflect instances where notice arrived late or was hard to follow.
           </li>
         </ul>
       </section>
@@ -46,8 +46,8 @@ export default function RecordsPage() {
       <section className="mt-8 p-4 border rounded-xl bg-gray-50">
         <h3 className="text-xl font-semibold mb-2">The key question</h3>
         <p>
-          Where is the public, dated, and funded plan for PFAS treatment, along with a monthly summary page
-          that reports progress in plain language?
+          Where is the public, dated, and funded plan for PFAS treatment, along with a monthly summary page that reports
+          progress in plain language?
         </p>
       </section>
 
