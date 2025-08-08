@@ -17,7 +17,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           </div>
         </header>
 
-        <main className="mx-auto max-w-3xl px-4 py-10">{children}</main>
+        {/* remove max-width here so the Home page can be wider */}
+        <main className="px-4 py-10">{children}</main>
 
         <footer className="mt-16 border-t">
           <div className="mx-auto max-w-3xl px-4 py-6 text-sm opacity-80">
