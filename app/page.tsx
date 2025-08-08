@@ -7,12 +7,12 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-6xl grid gap-6 lg:grid-cols-[280px_minmax(0,1fr)_280px]">
-      {/* LEFT PHOTO — replace src later; placeholder shows until then */}
-      <SidePhoto src={undefined} alt="Local water photo (left)" />
+    <div className="mx-auto max-w-3xl 2xl:max-w-none 2xl:grid 2xl:grid-cols-[240px_minmax(0,900px)_240px] 2xl:gap-8">
+      {/* LEFT PHOTO — placeholders only at 2xl, won’t show on smaller screens */}
+      <SidePhoto src={undefined} alt="Local water photo (left)" showPlaceholder />
 
       {/* MAIN CONTENT */}
-      <div className="max-w-3xl mx-auto">
+      <div className="2xl:max-w-none">
         <h1 className="text-4xl font-bold mb-4">Clean Water. Clear Answers.</h1>
 
         <p className="text-xl mb-6">
@@ -74,8 +74,8 @@ export default function Page() {
         </p>
       </div>
 
-      {/* RIGHT PHOTO — replace src later; placeholder shows until then */}
-      <SidePhoto src={undefined} alt="Local water photo (right)" />
+      {/* RIGHT PHOTO */}
+      <SidePhoto src={undefined} alt="Local water photo (right)" showPlaceholder />
     </div>
   );
 }
