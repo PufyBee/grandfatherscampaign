@@ -1,8 +1,10 @@
-/* app/globals.css (or styles/globals.css) */
-import "../styles/globals.css";
-@import "tailwindcss";
+/* Global styles for Tailwind v3 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-/* — your custom globals here — */
-body {
-  /* e.g. default bg/text colors */
-}
+/* Readability defaults */
+html { font-size: 18px; }
+body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; line-height: 1.6; }
+h1, h2, h3 { line-height: 1.25; }
+ul { padding-left: 1.25rem; }
