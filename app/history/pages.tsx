@@ -20,13 +20,7 @@ export default function HistoryPage() {
         Download the full history (.docx)
       </a>
 
-      <p className="mt-4 text-sm opacity-80">
-        Don’t see the download? Make sure the file exists at <code>/public/docs/nix-2019-campaign-and-2020-2025.docx</code>.
-      </p>
-
-      <p className="mt-8 text-sm opacity-80">
-        Prepared by Dr. Rod Macpherson. Provided verbatim.
-      </p>
+      <p className="mt-8 text-sm opacity-80">Prepared by Dr. Rod Macpherson. Provided verbatim.</p>
     </div>
   );
 }
