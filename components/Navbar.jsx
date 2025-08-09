@@ -2,18 +2,25 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const links = [
+  { href: "/", label: "Home" },
+  { href: "/background", label: "Background" },
+  { href: "/water", label: "Water" },
+  { href: "/history", label: "History" }, // <-- now a page, not a direct download
+];
+
 export default function Navbar() {
   const pathname = usePathname();
   return (
     <nav className="flex h-12 items-center gap-6">
-      <Link href="/" className={`py-2 ${pathname === "/" ? "font-semibold underline" : "hover:underline"}`}>Home</Link>
-      <Link href="/background" className={`py-2 ${pathname.startsWith("/background") ? "font-semibold underline" : "hover:underline"}`}>Background</Link>
-      <Link href="/water" className={`py-2 ${pathname.startsWith("/water") ? "font-semibold underline" : "hover:underline"}`}>Water</Link>
-
-      {/* Direct download (no route needed) */}
-      <a href="/docs/nix-2019-campaign-and-2020-2025.docx" download className="py-2 hover:underline">
-        History
-      </a>
+      {links.map(({ href, label }) => {
+        const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
+        return (
+          <Link key={href} href={href} className={`py-2 ${active ? "font-semibold underline" : "hover:underline"}`}>
+            {label}
+          </Link>
+        );
+      })}
     </nav>
   );
 }
