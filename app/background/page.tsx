@@ -78,8 +78,8 @@ export default function BackgroundPage() {
         <figure className="mt-4 lg:mt-1">
           <div className="relative w-full lg:w-[320px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.webp"   // change if you used .jpg
-              alt="Dr. Rod Macpherson seated, holding his dog"
+              src="/images/rod-with-dog.jpg"   
+              alt=""
               fill
               sizes="(min-width:1024px) 320px, 100vw"
               priority
