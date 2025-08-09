@@ -6,26 +6,22 @@ export const metadata: Metadata = {
   title: "Dr. Rod Macpherson for Mayor | Montevallo Water Facts",
 };
 
-const HERO_SRC = "/images/vote-rod-mayor.jpg"; // change to .webp/.jpg if needed
+const HERO_SRC = "/images/vote-rod-mayor.jpg"; // update if you used .webp/.jpg
 
 export default function Page() {
   return (
     <div className="mx-auto max-w-5xl px-4">
-      {/* HERO: full-width banner strip */}
-      <div className="mb-8 bg-blue-800">
-        <div className="mx-auto max-w-5xl px-4 py-4">
-          <div className="relative w-full aspect-[21/9]">
-            <Image
-              src={HERO_SRC}
-              alt="" // decorative
-              fill
-              sizes="(min-width:1280px) 1024px, 100vw"
-              priority
-              className="object-contain"
-              aria-hidden="true"
-            />
-          </div>
-        </div>
+      {/* HERO: just the image, centered, no background */}
+      <div className="relative mx-auto max-w-4xl aspect-[5/3] mb-8">
+        <Image
+          src={HERO_SRC}
+          alt=""                 // decorative
+          fill
+          sizes="(min-width:1280px) 896px, 90vw"
+          priority
+          className="object-contain"
+          aria-hidden="true"
+        />
       </div>
 
       <h1 className="text-4xl font-extrabold tracking-tight mb-6">
@@ -83,22 +79,13 @@ export default function Page() {
 
       {/* Quick actions */}
       <div className="flex flex-wrap gap-3 mb-4">
-        <Link
-          href="/water"
-          className="inline-block rounded-md bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800"
-        >
+        <Link href="/water" className="inline-block rounded-md bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800">
           Learn about PFAS in our water
         </Link>
-        <Link
-          href="/history"
-          className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200"
-        >
+        <Link href="/history" className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200">
           Download the full history
         </Link>
-        <Link
-          href="/background"
-          className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200"
-        >
+        <Link href="/background" className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200">
           Read Dr. Macpherson’s background
         </Link>
       </div>
