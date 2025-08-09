@@ -10,7 +10,7 @@ export default function HistoryPage() {
     <div className="mx-auto max-w-3xl px-4">
       <h1 className="text-3xl font-bold mb-4">History: Mayor Nix</h1>
       <p className="mb-6">
-        Download the complete 13-page document prepared by Dr. Rod Macpherson. The file is provided unedited for your review and printing.
+        Download the complete document prepared by Dr. Rod Machpherson. 
       </p>
 
       <a
