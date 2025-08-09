@@ -1,11 +1,13 @@
 "use client";
+
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "Home" },
+  { href: "/background", label: "Background" },
   { href: "/water", label: "Water" },
-  { href: "/records", label: "Promises & Outcomes" }, // <- updated label
+  { href: "/history", label: "History" }, // download page
 ];
 
 export default function Navbar() {
