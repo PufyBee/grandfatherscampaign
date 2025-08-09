@@ -6,20 +6,26 @@ export const metadata: Metadata = {
   title: "Dr. Rod Macpherson for Mayor | Montevallo Water Facts",
 };
 
+const HERO_SRC = "/images/vote-rod-mayor.jpg"; // change to .webp/.jpg if needed
+
 export default function Page() {
   return (
     <div className="mx-auto max-w-5xl px-4">
-      {/* HERO: campaign sign */}
-      <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-white border mb-8">
-        <Image
-          src="/images/vote-rod-mayor.jpg"   // change extension if needed
-          alt=""                               // decorative
-          fill
-          sizes="(min-width:1280px) 1024px, 100vw"
-          priority
-          className="object-contain"
-          aria-hidden="true"
-        />
+      {/* HERO: full-width banner strip */}
+      <div className="mb-8 bg-blue-800">
+        <div className="mx-auto max-w-5xl px-4 py-4">
+          <div className="relative w-full aspect-[21/9]">
+            <Image
+              src={HERO_SRC}
+              alt="" // decorative
+              fill
+              sizes="(min-width:1280px) 1024px, 100vw"
+              priority
+              className="object-contain"
+              aria-hidden="true"
+            />
+          </div>
+        </div>
       </div>
 
       <h1 className="text-4xl font-extrabold tracking-tight mb-6">
@@ -68,19 +74,31 @@ export default function Page() {
           <li>Stop wasting the taxpayers’ money on ill-conceived projects.</li>
           <li>Restore openness and honesty to City Hall.</li>
           <li>Reject defective building plans that cause flooding.</li>
-          <li>Investigate the mismanagement of the Mahler Farm property and the questionable demolition of the Historic Victory Building.</li>
+          <li>
+            Investigate the mismanagement of the Mahler Farm property and the questionable
+            demolition of the Historic Victory Building.
+          </li>
         </ol>
       </section>
 
       {/* Quick actions */}
       <div className="flex flex-wrap gap-3 mb-4">
-        <Link href="/water" className="inline-block rounded-md bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800">
+        <Link
+          href="/water"
+          className="inline-block rounded-md bg-blue-700 px-5 py-3 text-white font-medium hover:bg-blue-800"
+        >
           Learn about PFAS in our water
         </Link>
-        <Link href="/history" className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200">
+        <Link
+          href="/history"
+          className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200"
+        >
           Download the full history
         </Link>
-        <Link href="/background" className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200">
+        <Link
+          href="/background"
+          className="inline-block rounded-md bg-gray-100 px-5 py-3 font-medium hover:bg-gray-200"
+        >
           Read Dr. Macpherson’s background
         </Link>
       </div>

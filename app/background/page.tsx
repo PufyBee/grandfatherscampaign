@@ -95,7 +95,7 @@ export default function BackgroundPage() {
         <figure className="hidden xl:block xl:col-start-3 justify-self-start">
           <div className="relative w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.png"
+              src="/images/rod-with-dog.jpg"
               alt=""
               fill
               sizes="300px"
