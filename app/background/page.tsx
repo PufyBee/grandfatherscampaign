@@ -5,24 +5,34 @@ export const metadata: Metadata = {
   title: "Background | Montevallo Water Facts",
 };
 
-// Put your image filenames here:
-const RIGHT_IMG = "/images/rod-with-dog.jpg";  // existing portrait
-const LEFT_IMG  = "/images/rod-speaking.jpg";  // add later; leave commented out below if not ready
+// Exact filenames in /public/images
+const RIGHT_IMG = "/images/rod-with-dog.jpg";
+const LEFT_IMG  = "/images/rod-speaking.jpg";
 
 export default function BackgroundPage() {
   return (
     <div className="mx-auto max-w-screen-2xl px-4">
+      {/* Desktop: three columns -> [gutter | centered content | gutter] */}
       <div className="xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
+        {/* H1 aligns with the centered column */}
         <h1 className="text-3xl font-bold mb-4 xl:col-start-2 mx-auto max-w-3xl">Background</h1>
 
-        {/* MOBILE/TABLET image (stacks) */}
+        {/* Mobile/tablet portrait (stacks above text) */}
         <figure className="mb-6 xl:hidden">
           <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
-            <Image src={RIGHT_IMG} alt="" fill sizes="100vw" priority className="object-cover" aria-hidden="true" />
+            <Image
+              src={RIGHT_IMG}
+              alt=""
+              fill
+              sizes="100vw"
+              priority
+              className="object-cover"
+              aria-hidden="true"
+            />
           </div>
         </figure>
 
-        {/* CENTERED TEXT */}
+        {/* Centered text column (unchanged width) */}
         <article className="mx-auto max-w-3xl xl:col-start-2">
           <p className="mb-6 leading-7">Life Experiences of Dr. Roderick “Rod” MacPherson</p>
           <p className="mb-6 leading-7">My wife and I have lived in Montevallo for 40+ years.</p>
@@ -84,21 +94,33 @@ export default function BackgroundPage() {
           </p>
         </article>
 
-        {/* RIGHT GUTTER IMAGE (desktop) — smaller and pushed outward */}
-        <figure className="hidden xl:block xl:col-start-3 justify-self-start">
-          <div className="relative w-[240px] translate-x-4 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
-            <Image src={RIGHT_IMG} alt="" fill sizes="240px" className="object-cover" aria-hidden="true" />
+        {/* Left gutter image (desktop only), pushed outward */}
+        <figure className="hidden xl:block xl:col-start-1 justify-self-end mt-12">
+          <div className="relative w-[230px] 2xl:w-[260px] -translate-x-8 2xl:-translate-x-12 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+            <Image
+              src={LEFT_IMG}
+              alt=""
+              fill
+              sizes="(min-width:1536px) 260px, 230px"
+              className="object-cover"
+              aria-hidden="true"
+            />
           </div>
         </figure>
 
-        {/* OPTIONAL LEFT GUTTER IMAGE (desktop). Uncomment when you have a second photo. */}
-        {
-        <figure className="hidden xl:block xl:col-start-1 justify-self-end mt-12">
-          <div className="relative w-[220px] -translate-x-4 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
-            <Image src={LEFT_IMG} alt="" fill sizes="220px" className="object-cover" aria-hidden="true" />
+        {/* Right gutter image (desktop only), pushed outward */}
+        <figure className="hidden xl:block xl:col-start-3 justify-self-start">
+          <div className="relative w-[230px] 2xl:w-[260px] translate-x-8 2xl:translate-x-12 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+            <Image
+              src={RIGHT_IMG}
+              alt=""
+              fill
+              sizes="(min-width:1536px) 260px, 230px"
+              className="object-cover"
+              aria-hidden="true"
+            />
           </div>
         </figure>
-        }
       </div>
     </div>
   );
