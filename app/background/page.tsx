@@ -8,17 +8,18 @@ export const metadata: Metadata = {
 export default function BackgroundPage() {
   return (
     <div className="mx-auto max-w-screen-2xl px-4">
-      <h1 className="mx-auto max-w-3xl text-3xl font-bold mb-4">Background</h1>
-
-      {/* 3-col canvas on xl+: [left gutter | centered content | right gutter] */}
+      {/* 3-col canvas on xl+: [gutter | centered content | gutter] */}
       <div className="xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
+
+        {/* H1 sits in the same centered column as the article to align edges */}
+        <h1 className="text-3xl font-bold mb-4 xl:col-start-2 mx-auto max-w-3xl">Background</h1>
 
         {/* MOBILE/TABLET portrait (stacks) */}
         <figure className="mb-6 xl:hidden">
           <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.webp"   // change to .jpg if needed
-              alt=""                              // decorative
+              src="/images/rod-with-dog.webp"  // change to .jpg if that's what you saved
+              alt=""                             // decorative
               fill
               sizes="100vw"
               priority
@@ -28,7 +29,7 @@ export default function BackgroundPage() {
           </div>
         </figure>
 
-        {/* CENTERED TEXT — stays centered at max-w-3xl */}
+        {/* CENTERED TEXT */}
         <article className="mx-auto max-w-3xl xl:col-start-2">
           <p className="mb-6 leading-7">Life Experiences of Dr. Roderick “Rod” MacPherson</p>
           <p className="mb-6 leading-7">My wife and I have lived in Montevallo for 40+ years.</p>
@@ -90,11 +91,11 @@ export default function BackgroundPage() {
           </p>
         </article>
 
-        {/* RIGHT GUTTER IMAGE (desktop only) — uses side space without shifting center text */}
+        {/* RIGHT GUTTER IMAGE (desktop only) */}
         <figure className="hidden xl:block xl:col-start-3 justify-self-start">
           <div className="relative w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.jpg"
+              src="/images/rod-with-dog.png"
               alt=""
               fill
               sizes="300px"
