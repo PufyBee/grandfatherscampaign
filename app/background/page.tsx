@@ -5,27 +5,20 @@ export const metadata: Metadata = {
   title: "Background | Montevallo Water Facts",
 };
 
+// Put your image filenames here:
+const RIGHT_IMG = "/images/rod-with-dog.png";  // existing portrait
+const LEFT_IMG  = "/images/rod-speaking.png";  // add later; leave commented out below if not ready
+
 export default function BackgroundPage() {
   return (
     <div className="mx-auto max-w-screen-2xl px-4">
-      {/* 3-col canvas on xl+: [gutter | centered content | gutter] */}
       <div className="xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
-
-        {/* H1 sits in the same centered column as the article to align edges */}
         <h1 className="text-3xl font-bold mb-4 xl:col-start-2 mx-auto max-w-3xl">Background</h1>
 
-        {/* MOBILE/TABLET portrait (stacks) */}
+        {/* MOBILE/TABLET image (stacks) */}
         <figure className="mb-6 xl:hidden">
           <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
-            <Image
-              src="/images/rod-with-dog.webp"  // change to .jpg if that's what you saved
-              alt=""                             // decorative
-              fill
-              sizes="100vw"
-              priority
-              className="object-cover"
-              aria-hidden="true"
-            />
+            <Image src={RIGHT_IMG} alt="" fill sizes="100vw" priority className="object-cover" aria-hidden="true" />
           </div>
         </figure>
 
@@ -91,19 +84,21 @@ export default function BackgroundPage() {
           </p>
         </article>
 
-        {/* RIGHT GUTTER IMAGE (desktop only) */}
+        {/* RIGHT GUTTER IMAGE (desktop) — smaller and pushed outward */}
         <figure className="hidden xl:block xl:col-start-3 justify-self-start">
-          <div className="relative w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
-            <Image
-              src="/images/rod-with-dog.jpg"
-              alt=""
-              fill
-              sizes="300px"
-              className="object-cover"
-              aria-hidden="true"
-            />
+          <div className="relative w-[240px] translate-x-4 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+            <Image src={RIGHT_IMG} alt="" fill sizes="240px" className="object-cover" aria-hidden="true" />
           </div>
         </figure>
+
+        {/* OPTIONAL LEFT GUTTER IMAGE (desktop). Uncomment when you have a second photo. */}
+        {/*
+        <figure className="hidden xl:block xl:col-start-1 justify-self-end mt-12">
+          <div className="relative w-[220px] -translate-x-4 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+            <Image src={LEFT_IMG} alt="" fill sizes="220px" className="object-cover" aria-hidden="true" />
+          </div>
+        </figure>
+        */}
       </div>
     </div>
   );
