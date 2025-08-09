@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 };
 
 // Put your image filenames here:
-const RIGHT_IMG = "/images/rod-with-dog.png";  // existing portrait
+const RIGHT_IMG = "/images/rod-with-dog.jpg";  // existing portrait
 const LEFT_IMG  = "/images/rod-speaking.png";  // add later; leave commented out below if not ready
 
 export default function BackgroundPage() {
