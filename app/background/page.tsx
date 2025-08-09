@@ -76,7 +76,7 @@ export default function BackgroundPage() {
         </div>
 
         {/* RIGHT: portrait — slim column; sticky so it stays in view while reading */}
-        <figure className="mt-6 lg:mt-1 lg:sticky lg:top-24">
+        <figure className="mt-6 lg:mt-1">
           <div className="relative w-full lg:w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
               src="/images/rod-with-dog.jpg"  // 
