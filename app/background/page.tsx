@@ -7,14 +7,29 @@ export const metadata: Metadata = {
 
 export default function BackgroundPage() {
   return (
-    // wider only for this page so the text isn't squeezed next to the photo
-    <div className="mx-auto max-w-5xl px-4">
-      <h1 className="text-3xl font-bold mb-4">Background</h1>
+    <div className="mx-auto max-w-screen-2xl px-4">
+      <h1 className="mx-auto max-w-3xl text-3xl font-bold mb-4">Background</h1>
 
-      {/* Desktop: two columns (text + slim portrait). Mobile: stacks. */}
-      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 items-start">
-        {/* LEFT: verbatim text */}
-        <div>
+      {/* 3-col canvas on xl+: [left gutter | centered content | right gutter] */}
+      <div className="xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
+
+        {/* MOBILE/TABLET portrait (stacks) */}
+        <figure className="mb-6 xl:hidden">
+          <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+            <Image
+              src="/images/rod-with-dog.webp"   // change to .jpg if needed
+              alt=""                              // decorative
+              fill
+              sizes="100vw"
+              priority
+              className="object-cover"
+              aria-hidden="true"
+            />
+          </div>
+        </figure>
+
+        {/* CENTERED TEXT — stays centered at max-w-3xl */}
+        <article className="mx-auto max-w-3xl xl:col-start-2">
           <p className="mb-6 leading-7">Life Experiences of Dr. Roderick “Rod” MacPherson</p>
           <p className="mb-6 leading-7">My wife and I have lived in Montevallo for 40+ years.</p>
 
@@ -73,23 +88,20 @@ export default function BackgroundPage() {
             improvement. This collaborative approach was the best real-world experience that I could offer to students who were about to enter
             the business world.
           </p>
-        </div>
+        </article>
 
-        {/* RIGHT: portrait — slim column; sticky so it stays in view while reading */}
-        <figure className="mt-6 lg:mt-1">
-          <div className="relative w-full lg:w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+        {/* RIGHT GUTTER IMAGE (desktop only) — uses side space without shifting center text */}
+        <figure className="hidden xl:block xl:col-start-3 justify-self-start">
+          <div className="relative w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.jpg"  // 
-              alt=""                              // decorative; keeps page clean for screen readers
+              src="/images/rod-with-dog.jpg"
+              alt=""
               fill
-              sizes="(min-width:1024px) 300px, 100vw"
-              priority
+              sizes="300px"
               className="object-cover"
               aria-hidden="true"
             />
           </div>
-          {/* Remove this caption if you want zero text */}
-          {/* <figcaption className="text-sm mt-2 opacity-80">Rod Macpherson with his dog Mooc.</figcaption> */}
         </figure>
       </div>
     </div>
