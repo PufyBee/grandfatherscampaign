@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 // Put your image filenames here:
 const RIGHT_IMG = "/images/rod-with-dog.jpg";  // existing portrait
-const LEFT_IMG  = "/images/rod-speaking.png";  // add later; leave commented out below if not ready
+const LEFT_IMG  = "/images/rod-speaking.jpg";  // add later; leave commented out below if not ready
 
 export default function BackgroundPage() {
   return (
@@ -92,13 +92,13 @@ export default function BackgroundPage() {
         </figure>
 
         {/* OPTIONAL LEFT GUTTER IMAGE (desktop). Uncomment when you have a second photo. */}
-        {/*
+        {
         <figure className="hidden xl:block xl:col-start-1 justify-self-end mt-12">
           <div className="relative w-[220px] -translate-x-4 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image src={LEFT_IMG} alt="" fill sizes="220px" className="object-cover" aria-hidden="true" />
           </div>
         </figure>
-        */}
+        }
       </div>
     </div>
   );
