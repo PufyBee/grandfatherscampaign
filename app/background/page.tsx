@@ -7,11 +7,12 @@ export const metadata: Metadata = {
 
 export default function BackgroundPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4">
+    // wider only for this page so the text isn't squeezed next to the photo
+    <div className="mx-auto max-w-5xl px-4">
       <h1 className="text-3xl font-bold mb-4">Background</h1>
 
-      {/* Text + Portrait layout */}
-      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_320px] lg:gap-8">
+      {/* Desktop: two columns (text + slim portrait). Mobile: stacks. */}
+      <div className="lg:grid lg:grid-cols-[minmax(0,1fr)_300px] lg:gap-12 items-start">
         {/* LEFT: verbatim text */}
         <div>
           <p className="mb-6 leading-7">Life Experiences of Dr. Roderick “Rod” MacPherson</p>
@@ -74,19 +75,21 @@ export default function BackgroundPage() {
           </p>
         </div>
 
-        {/* RIGHT: portrait (stacks on mobile) */}
-        <figure className="mt-4 lg:mt-1">
-          <div className="relative w-full lg:w-[320px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
+        {/* RIGHT: portrait — slim column; sticky so it stays in view while reading */}
+        <figure className="mt-6 lg:mt-1 lg:sticky lg:top-24">
+          <div className="relative w-full lg:w-[300px] aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
-              src="/images/rod-with-dog.jpg"   
-              alt=""
+              src="/images/rod-with-dog.jpg"  // 
+              alt=""                              // decorative; keeps page clean for screen readers
               fill
-              sizes="(min-width:1024px) 320px, 100vw"
+              sizes="(min-width:1024px) 300px, 100vw"
               priority
               className="object-cover"
+              aria-hidden="true"
             />
           </div>
-          <figcaption className="text-sm mt-2 opacity-80">Rod Macpherson with his dog.</figcaption>
+          {/* Remove this caption if you want zero text */}
+          {/* <figcaption className="text-sm mt-2 opacity-80">Rod Macpherson with his dog Mooc.</figcaption> */}
         </figure>
       </div>
     </div>
