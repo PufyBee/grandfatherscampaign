@@ -12,7 +12,7 @@ export default function Page() {
       {/* HERO: campaign sign */}
       <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden bg-white border mb-8">
         <Image
-          src="/images/vote-rod-mayor.webp"   // change extension if needed
+          src="/images/vote-rod-mayor.jpg"   // change extension if needed
           alt=""                               // decorative
           fill
           sizes="(min-width:1280px) 1024px, 100vw"
