@@ -8,7 +8,7 @@ export default function Section2Page() {
   return (
     <div className="mx-auto max-w-3xl px-4">
       <h1 className="text-3xl font-bold mb-6">
-        Sec 2- Russell Nix’s 2019 Campaign and 2020-2025 Administration (8/10/25)
+        Russell Nix’s 2019 Campaign and 2020-2025 Administration (8/10/25)
       </h1>
 
       <h2 className="text-2xl font-semibold mb-3">

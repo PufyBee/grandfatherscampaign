@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sec 3- Life Experiences of Dr. Roderick “Rod” MacPherson | Montevallo Water Facts",
+  title: "Life Experiences of Dr. Roderick “Rod” MacPherson | Montevallo Water Facts",
 };
 
 export default function BackgroundPage() {
