@@ -5,12 +5,11 @@ export const metadata: Metadata = {
   title: "Introduction website | Montevallo Water Facts",
 };
 
-const HERO_SRC = "/images/vote-rod-mayor.jpg"; // keep this file in /public/images
+const HERO_SRC = "/images/vote-rod-mayor.jpg";
 
 export default function Page() {
   return (
     <div id="top" className="mx-auto max-w-5xl px-4">
-      {/* HERO: just the image */}
       <div className="relative mx-auto max-w-4xl aspect-[5/3] mb-8">
         <Image
           src={HERO_SRC}
@@ -23,20 +22,17 @@ export default function Page() {
         />
       </div>
 
-      {/* Section 1 header lines */}
       <h2 className="text-2xl font-semibold mb-2">
         This website contains information concerning Montevallo’s dangerous drinking water.
       </h2>
       <p className="mb-6">Mayor Nix has long ignored Montevallo’s dangerous drinking water.</p>
 
-      {/* The four headings listed in the doc */}
       <div className="space-y-2 mb-6">
         <p>Mayor Nix’s False and Misleading statements (2019-2025)</p>
         <p>Dr. Roderick MacPherson’s professional qualification to be mayor.</p>
         <p>(4) General questions for Montevallo’s residents</p>
       </div>
 
-      {/* Verbatim paragraphs */}
       <p className="mb-4 leading-7">
         Mayor Russell “Rusty” Nix swore to an Oath of Office to be HONEST, and with that oath, the mayor has
         the moral and legal responsibility to protect the personal health, safety, and well-being of the residents
@@ -78,7 +74,6 @@ export default function Page() {
         assorted harms that can be meted out to those drinking water tainted with Forever Chemicals.
       </p>
 
-      {/* The list, verbatim headings */}
       <h3 className="font-semibold">Unborn and Young Children:</h3>
       <p className="mb-4 leading-7">
         The unborn absorb PFAS from their mother’s blood. PFAS excreted through lactation leads to lower birth weights.
@@ -109,8 +104,6 @@ export default function Page() {
         destructive impacts haven’t been reported. Less than a drop from one of the PFAS can cause harm to humans, animals,
         and the environment.
       </p>
-
-      <p className="opacity-75 text-sm">Page 1 / Page 2</p>
     </div>
   );
 }
