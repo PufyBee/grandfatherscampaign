@@ -1,141 +1,85 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Introduction website | Montevallo Water Facts",
+  title: "Sec 2- Russell Nix’s 2019 Campaign and 2020-2025 Administration (8/10/25)",
 };
 
-const HERO_SRC = "/images/vote-rod-mayor.jpg";
-
-export default function Page() {
+export default function Section2Page() {
   return (
-    <div id="top" className="mx-auto max-w-5xl px-4">
-      {/* HERO */}
-      <div className="relative mx-auto max-w-4xl aspect-[5/3] mb-8">
-        <Image
-          src={HERO_SRC}
-          alt=""
-          fill
-          sizes="(min-width:1280px) 896px, 90vw"
-          priority
-          className="object-contain"
-          aria-hidden="true"
-        />
-      </div>
+    <div className="mx-auto max-w-3xl px-4">
+      <h1 className="text-3xl font-bold mb-6">
+        Russell Nix’s 2019 Campaign and 2020-2025 Administration (8/10/25)
+      </h1>
 
-      {/* GOALS (moved to top) */}
-      <section id="goals" className="mb-12">
-        <h2 className="text-2xl font-semibold mb-3">Dr. Rod MacPherson’s GOALS</h2>
-        <p className="mb-4 leading-7">If elected,</p>
-        <div className="space-y-2 leading-7">
-          <p>
-            (1) I will immediately urge the Montevallo Water Board (MWB) to request that their commercial suppliers of
-            drinking water begin removing the toxic (poisonous) and carcinogenic (cause cancer) chemicals from their
-            water. If that is not practical, I will request that the MWB take steps to purchase a Reverse Osmosis
-            system, including activated charcoal filters and UV technology, to reduce the dangerous ‘Forever Chemicals’
-            in Montevallo’s drinking water.
-          </p>
-          <p>(2) Reduce crime by strengthening the Police Department,</p>
-          <p>
-            (3) Invite the University of Montevallo to share its vast academic resources with the city schools to help
-            academically improve them,
-          </p>
-          <p>(4) Restore “honesty” and “openness” at City Hall,</p>
-          <p>(5) Stop wasting the taxpayers’ money on ill-conceived projects (a hotel),</p>
-          <p>(6) Reject defective building plans that cause flooding (Indian Highlands and Arden),</p>
-          <p>(7) Investigate the mismanagement of Ms. Mahler’s donated money, home, and land,</p>
-          <p>(8) Investigate if Mayor Nix had legal authority to demolish the Historic Victory Building,</p>
-          <p>(9) Enforce local and state laws to rid the city of illegal “Boarding Houses,” and</p>
-          <p>
-            (10) Begin investing the taxpayers’ money in long-neglected infrastructure projects needed throughout the
-            city and reduce the overspending on “Main Street” projects.
-          </p>
-        </div>
-      </section>
-
-      {/* INTRO (verbatim) */}
-      <h2 className="text-2xl font-semibold mb-2">
-        This website contains information concerning Montevallo’s dangerous drinking water.
+      <h2 className="text-2xl font-semibold mb-3">
+        FALSE &amp; MISLEADING PROMISES MADE TO GET ELECTED MAYOR IN 2019.
       </h2>
-      <p className="mb-6">Mayor Nix has long ignored Montevallo’s dangerous drinking water.</p>
-
-      <div className="space-y-2 mb-6">
-        <p>Mayor Nix’s False and Misleading statements (2019-2025)</p>
-        <p>Dr. Roderick MacPherson’s professional qualification to be mayor.</p>
-        <p>(4) General questions for Montevallo’s residents</p>
-      </div>
 
       <p className="mb-4 leading-7">
-        Mayor Russell “Rusty” Nix swore to an Oath of Office to be HONEST, and with that oath, the mayor has the moral
-        and legal responsibility to protect the personal health, safety, and well-being of the residents of Montevallo
-        and the public at large.
+        Although I was a supporter of Councilman Nix for mayor (a donation, attended campaign rallies, and encouraged others to vote for him) in 2019, it has become obvious that Mayor Nix has not been honest with Montevallo’s residents. He has abandoned his sworn Oath of office to be faithfully honest with the town’s residents.
       </p>
 
       <p className="mb-4 leading-7">
-        Since the 1980s, nationwide publicity has focused on the dangerous chemicals found in drinking water. Over the
-        four-and-1/2 years Mr. Nix has been Montevallo’s Mayor, he has not taken any steps to remove the toxic
-        (poisonous) and carcinogenic (cause cancer) called Forever Chemicals from Montevallo’s drinking water. Equally
-        important, Mayor Nix has not even informed the residents of these dangerous chemicals in our drinking water.
-        Furthermore, there are laws that compel mayors to be honest with the public. The Right to Know Laws, Public
-        Notice Laws, Freedom of Information Laws, and certain Alabama Laws all have a bearing on the mayor’s duty to
-        inform the public of a known danger.
+        Before Councilman Nix was elected Mayor, he served in the previous Mayor’s (Dr. Hollie Cost) administration and many suspicious events took place at City Hall at that time,
+      </p>
+
+      <p className="mb-2 leading-7">(1) Over a two-year period, gasoline was consistently stolen from city tanks.</p>
+      <p className="mb-2 leading-7">(2) City issued credit cards were used and abused by city employees.</p>
+      <p className="mb-2 leading-7">(3) A signature stamp assigned to a financial officer was illegally used by others.</p>
+      <p className="mb-2 leading-7">(4) City equipment was illegally borrowed by city employees on weekends.</p>
+      <p className="mb-2 leading-7">(5) Two employees were illegally fired. One filed an Ethics Complaint, and the other one filed a lawsuit against Mayor Cost. That lawsuit is still before the courts.</p>
+      <p className="mb-4 leading-7">(6) Other troubling events occurred (grievances were filed, a failure to be properly sworn at a hearing for dismissal, illegal bonuses given to a select few, and so on).</p>
+
+      <p className="mb-4 leading-7">
+        At campaign events in the mayoral race, Councilman Nix repeatedly told the town’s residents that he would be open, transparent, spend fewer public funds, investigate possible criminal activities at City Hall, and order a forensic financial audit to uncover whether financial wrongdoing had taken place in Dr. Cost’s administration. The necessity for this audit was based in part on comments contained in the auditor’s annual reports.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-10 mb-3">
+        FALSE &amp; MISLEADING STATEMENTS MADE BY MAYOR NIX BETWEEN 2020- 2025.
+      </h2>
+
+      <p className="mb-4 leading-7">
+        Mayor Nix publicly announced that there was no need for an investigation of these criminal allegations because they were based on rumors and there was no need to undertake the forensic financial audit because it was too costly. Mayor Nix claimed that a forensic audit would cost $70,000.
       </p>
 
       <p className="mb-4 leading-7">
-        Other mayors throughout the nation, and in Alabama, are taking actions to remove the ‘Forever Chemicals’ from
-        their drinking water. Unlike the other mayors, why has Mayor Nix continued to ignore these dangerous chemicals
-        in the drinking water?
-      </p>
-
-      <p className="mb-6 leading-7">
-        Movies like Erin Brockovich, Dark Waters, TV documentaries, and TV news programs have informed us about the
-        dangers from Forever Chemicals (collectively grouped as PFAS). Information about these toxic and carcinogenic
-        chemicals has been routinely published in newspapers and magazines. Daily information on Forever Chemicals shows
-        up on the news feed to my computer nearly every day.
-      </p>
-
-      <p className="mb-6 leading-7">
-        Mayor Nix has told us that he served on Montevallo’s Water Board. During Mayor Nix’s term in office, Montevallo’s
-        Water Board was testing for 29 PFAS in our drinking water. During 2023, 2024, and 2025, Montevallo’s water
-        quality test reports showed that many of the 29 PFAS were present in our drinking water. These water quality
-        tests can be seen on the website for the Alabama Department of Environmental Management’s e-file.
+        Mayor Nix’s reasons for not investigating possible criminal wrongdoing at City Hall or calling for a forensic audit that was too costly are deceptive arguments. (1) The investigation could have been carried out by detectives from Montevallo’s own police department at no cost to the taxpayers. (2) A forensic audit could have been used to identify financial problems at City Hall for a small fraction of the $70,000 cost that Mayor Nix mentioned. The average salary for an accountant with CPA certification in 2019 was $165 per hour in Alabama. (3) Since the forensic auditor could simply read through the already published annual auditor’s reports to uncover the financial problems, the time required to complete his examination would be substantially shortened. Page 1
       </p>
 
       <p className="mb-4 leading-7">
-        Humans can be injured in a variety of ways by Forever Chemicals. The following list provides a small sample of
-        the assorted harms that can be meted out to those drinking water tainted with Forever Chemicals.
+        (4) The CPA’s work would be further shortened because he could have used a statistical sampling technique rather than a full review of all financial records. Based on actual costs, and assuming his work would have taken approximately 10 days, it would have cost about $10,000 for a forensic audit. (5) Mayor Nix had a legal obligation under state law to find out if criminal activities had taken place at City Hall.
       </p>
 
-      <h3 className="font-semibold">Unborn and Young Children:</h3>
+      <h2 className="text-2xl font-semibold mt-10 mb-3">
+        OTHER VIOLATIONS OF THE LAW COMMITTED DURING MAYOR NIX’S TERM IN OFFICE.
+      </h2>
+
       <p className="mb-4 leading-7">
-        The unborn absorb PFAS from their mother’s blood. PFAS excreted through lactation leads to lower birth weights.
-        Since children drink more water, eat more food, and breathe more air per pound of body weight than adults, it
-        increases their exposure to PFAS. They crawl on floors and stick things in their mouths which leads to more
-        contact with PFAS in carpets, dust, toys, other playthings, and cleaning chemicals.
+        Under Alabama law, for years, Mayor Nix has ignored his legal duty to protect the personal health, safety, and well-being of the community’s residents by allowing dangerous Forever Chemicals (collectively grouped as PFAS) to be present in the city’s drinking water.
       </p>
 
-      <h3 className="font-semibold">Children and Young Adults:</h3>
       <p className="mb-4 leading-7">
-        PFAS are connected to developmental disorders, cardiovascular diseases, metabolic illnesses, and various cancers.
+        More than a million dollars in free land, free public money, and tax breaks were given to Cobblestone Hotels to induce them to construct a new 54-unit hotel next to City Hall on a long abandoned hazardous waste site. The contract between Cobblestone, Shelby County, and Montevallo may cause future tax increases for Montevallo’s residents. Also, because of this legal precedent, other local businesses may ask for free land, free public funds, and tax breaks if they decide to enlarge, modernize or relocate their existing businesses.
       </p>
 
-      <h3 className="font-semibold">Women:</h3>
       <p className="mb-4 leading-7">
-        PFAS can cause reproductive damage, delayed fetal growth, increased blood pressure, high cholesterol, suppress
-        the immune system, thyroid disease, preeclampsia, and introduce cancers (breast, ovarian, liver, bladder, and
-        so on).
+        Under Montevallo Zoning Regulations, homeowners and businessowners face financial discrimination (see Special District’s zoning privileges solely for apartment owners).
       </p>
 
-      <h3 className="font-semibold">Men:</h3>
       <p className="mb-4 leading-7">
-        PFAS can cause assorted ailments, stomach problems, assorted diseases, and cancers (testicular, kidney,
-        prostrate, thyroid, etc.)
+        By ignoring local and state law, Mayor Nix has allowed an increasing number of “Boarding Houses” to be established in Montevallo.
       </p>
 
-      <p className="mb-8 leading-7">
-        According to one expert, there probably isn’t a single tissue or an organ system in the human body where PFAS
-        destructive impacts haven’t been reported. Less than a drop from one of the PFAS can cause harm to humans,
-        animals, and the environment.
+      <p className="mb-4 leading-7">
+        By approving and permitting defective building plans (for example, the Bluegrass Apts. now called Capstone at Falco Ridge Apts.), stormwater runoff and flooding problems worsened in the Arden and Indian Highlands Subdivisions and overtopped Scott Street and Overland Road. At the intersection of Overland and Shoshone, stormwater runoff and flooding problems have been ongoing public safety and public nuisance issues. The owner of these apartments damaged Montevallo’s stormwater sewer system on the site for Bluegrass/Capstone at Falcon Ridge Apts. which was legally protected by a Utility Easement. To date, the damage has not been repaired.
+      </p>
+
+      <p className="mb-4 leading-7">
+        Whether Mayor Nix had a legal right to demolish the Historic Victory Building is unknown. During the demolition, hazardous chemicals were released into the air and onto the land. When the residents were questioned about making changes in Montevallo’s Historic District, they stated that no changes were to be made. The Historic Victory Building was listed in the Historical Registry which brings federal, state, and local laws to bear.
+      </p>
+
+      <p className="mb-4 leading-7">
+        The mismanagement of Ms. Mahler’s cash gifts ($700,000 or so), house, and farm and the reported raw sewage leaks in the Arden Subdivision need to be investigated
       </p>
     </div>
   );
