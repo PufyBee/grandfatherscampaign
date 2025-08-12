@@ -2,22 +2,25 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Background | Montevallo Water Facts",
+  title: "Dr. Roderick MacPherson’s professional qualification to be mayor. | Montevallo Water Facts",
 };
 
-// Exact filenames in /public/images
+// Exact filenames in /public/images (case-sensitive on Vercel)
 const RIGHT_IMG = "/images/rod-with-dog.jpg";
 const LEFT_IMG  = "/images/rod-speaking.jpg";
 
 export default function BackgroundPage() {
   return (
     <div className="mx-auto max-w-screen-2xl px-4">
-      {/* 3-col grid on desktop: [gutter | centered content | gutter] */}
+      {/* 3-col desktop grid: [gutter | centered content | gutter] */}
       <div className="xl:grid xl:grid-cols-[1fr_minmax(0,48rem)_1fr] xl:gap-8">
-        {/* Row 1: H1 (center column) */}
-        <h1 className="text-3xl font-bold mb-4 xl:col-start-2 mx-auto max-w-3xl">Background</h1>
 
-        {/* Mobile/tablet portrait (stacks above text, hidden on xl) */}
+        {/* H1 aligned with center column, EXACT text per Rod */}
+        <h1 className="text-3xl font-bold mb-4 xl:col-start-2 mx-auto max-w-3xl">
+          Dr. Roderick MacPherson’s professional qualification to be mayor.
+        </h1>
+
+        {/* Mobile portrait (stacks above text) */}
         <figure className="mb-6 xl:hidden">
           <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
@@ -32,7 +35,7 @@ export default function BackgroundPage() {
           </div>
         </figure>
 
-        {/* Row 2: LEFT gutter image (desktop) — outward, top-aligned with article */}
+        {/* Row 2: LEFT gutter image (desktop) — outward, top-aligned */}
         <figure className="hidden xl:block xl:col-start-1 xl:row-start-2 justify-self-end">
           <div className="relative w-[230px] 2xl:w-[260px] -translate-x-8 2xl:-translate-x-12 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
@@ -46,7 +49,7 @@ export default function BackgroundPage() {
           </div>
         </figure>
 
-        {/* Row 2: RIGHT gutter image (desktop) — outward, top-aligned with article */}
+        {/* Row 2: RIGHT gutter image (desktop) — outward, top-aligned */}
         <figure className="hidden xl:block xl:col-start-3 xl:row-start-2 justify-self-start">
           <div className="relative w-[230px] 2xl:w-[260px] translate-x-8 2xl:translate-x-12 aspect-[3/4] rounded-xl overflow-hidden bg-gray-100">
             <Image
@@ -60,7 +63,7 @@ export default function BackgroundPage() {
           </div>
         </figure>
 
-        {/* Row 2: Centered text column (unchanged width) */}
+        {/* Row 2: Centered text (Rod’s words verbatim) */}
         <article className="mx-auto max-w-3xl xl:col-start-2 xl:row-start-2">
           <p className="mb-6 leading-7">Life Experiences of Dr. Roderick “Rod” MacPherson</p>
           <p className="mb-6 leading-7">My wife and I have lived in Montevallo for 40+ years.</p>

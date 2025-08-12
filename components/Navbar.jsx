@@ -6,7 +6,7 @@ const links = [
   { href: "/", label: "Home" },
   { href: "/background", label: "Background" },
   { href: "/water", label: "Water" },
-  { href: "/history", label: "History" }, // <-- now a page, not a direct download
+  { href: "/history", label: "History" }, 
 ];
 
 export default function Navbar() {
