@@ -2,25 +2,36 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-const links = [
-  { href: "/", label: "Home" },
+const items = [
+  { href: "/", label: "Introduction" },
+  { href: "/section-2", label: "Section 2" },
   { href: "/background", label: "Background" },
-  { href: "/water", label: "Water" },
-  { href: "/history", label: "History" }, 
+  { href: "/history", label: "History" },
 ];
 
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <nav className="flex h-12 items-center gap-6">
-      {links.map(({ href, label }) => {
-        const active = href === "/" ? pathname === "/" : pathname.startsWith(href);
-        return (
-          <Link key={href} href={href} className={`py-2 ${active ? "font-semibold underline" : "hover:underline"}`}>
-            {label}
-          </Link>
-        );
-      })}
+    <nav className="bg-blue-800 text-white">
+      <div className="mx-auto max-w-5xl px-4">
+        <ul className="flex flex-wrap gap-4 py-3">
+          {items.map((it) => {
+            const active = pathname === it.href;
+            return (
+              <li key={it.href}>
+                <Link
+                  href={it.href}
+                  className={`px-3 py-1.5 rounded-md ${
+                    active ? "bg-white/15" : "hover:bg-white/10"
+                  }`}
+                >
+                  {it.label}
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </nav>
   );
 }

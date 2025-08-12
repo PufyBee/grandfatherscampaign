@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "History (Full Document Download) | Montevallo Water Facts",
+  title: "History — Full Document Download | Montevallo Water Facts",
 };
 
 export default function HistoryPage() {
   const docPath = "/docs/nix-2019-campaign-and-2020-2025.docx";
   return (
     <div className="mx-auto max-w-3xl px-4">
-      <h1 className="text-3xl font-bold mb-4">History: Mayor Nix</h1>
+      <h1 className="text-3xl font-bold mb-4">History — 13-Page Document</h1>
       <p className="mb-6">
-        Download the complete document prepared by Dr. Rod Machpherson. 
+        Full, unedited 13-page document prepared by Dr. Rod Macpherson. It’s offered as a download so you can read or print it easily.
       </p>
 
       <a
