@@ -79,7 +79,7 @@ export default function Section2Page() {
       </p>
 
       <p className="mb-4 leading-7">
-        The mismanagement of Ms. Mahler’s cash gifts ($700,000 or so), house, and farm and the reported raw sewage leaks in the Arden Subdivision need to be investigated. Page 2
+        The mismanagement of Ms. Mahler’s cash gifts ($700,000 or so), house, and farm and the reported raw sewage leaks in the Arden Subdivision need to be investigated
       </p>
     </div>
   );

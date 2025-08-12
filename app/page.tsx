@@ -25,11 +25,12 @@ export default function Page() {
       <h2 className="text-2xl font-semibold mb-2">
         This website contains information concerning Montevallo’s dangerous drinking water.
       </h2>
-      <p className="mb-6">Mayor Nix has long ignored Montevallo’s dangerous drinking water.</p>
+      
 
       <div className="space-y-2 mb-6">
-        <p>Mayor Nix’s False and Misleading statements (2019-2025)</p>
-        <p>Dr. Roderick MacPherson’s professional qualification to be mayor.</p>
+        <p>(1)Mayor Nix has long ignored Montevallo’s dangerous drinking water.</p>
+        <p>(2)Mayor Nix’s False and Misleading statements (2019-2025)</p>
+        <p>(3)Dr. Roderick MacPherson’s professional qualification to be mayor.</p>
         <p>(4) General questions for Montevallo’s residents</p>
       </div>
 
