@@ -10,7 +10,7 @@ const HERO_SRC = "/images/vote-rod-mayor.png"; // change if your hero file name/
 
 export default function Page() {
   return (
-    <div className="mx-auto max-w-5xl px-4">
+    <div id="top" className="mx-auto max-w-5xl px-4">
       {/* HERO: just the image (no frame/background) */}
       <div className="relative mx-auto max-w-4xl aspect-[5/3] mb-8">
         <Image
@@ -183,18 +183,9 @@ export default function Page() {
         </ul>
       </section>
 
-      {/* Back to top */}
+      {/* Back to top — no onClick in Server Component */}
       <div className="mt-8 mb-6">
-        <a
-          href="#top"
-          onClick={(e) => {
-            e.preventDefault();
-            if (typeof window !== "undefined") window.scrollTo({ top: 0, behavior: "smooth" });
-          }}
-          className="text-sm underline hover:no-underline"
-        >
-          Back to top
-        </a>
+        <a href="#top" className="text-sm underline hover:no-underline">Back to top</a>
       </div>
     </div>
   );
