@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import Navbar from "../components/Navbar";
-
+import "../styles/globals.css";            // <-- was "./globals.css"
+import Navbar from "../components/Navbar"; // <-- relative path, no "@/"
 
 export const metadata: Metadata = {
   title: "Montevallo Water Facts",
@@ -16,8 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="py-8">{children}</main>
         <footer className="mt-16 border-t">
           <div className="mx-auto max-w-5xl px-4 py-6 text-sm opacity-80">
-            PAID POLITICAL ADVERTISEMENT BY DR. ROD MACHPERSON, 665 OVERLAND RD.
-            MONTEVALLO, AL 35115
+            PAID POLITICAL ADVERTISEMENT BY DR. ROD MACHPERSON, 665 OVERLAND RD. MONTEVALLO, AL 35115
           </div>
         </footer>
       </body>
