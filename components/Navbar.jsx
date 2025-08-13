@@ -4,9 +4,9 @@ import { usePathname } from "next/navigation";
 
 const items = [
   { href: "/", label: "Introduction" },
-  { href: "/section-2", label: "Current Issues" },
-  { href: "/background", label: "Life Experiences" },
-  { href: "/history", label: "History" },
+  { href: "/section-2", label: "CURRENT ISSUES" },
+  { href: "/background", label: "Dr. Mac's Qualifications" },
+  { href: "/history", label: "Questions for you" },
 ];
 
 export default function Navbar() {
