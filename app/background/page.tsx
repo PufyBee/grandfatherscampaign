@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 export default function BackgroundPage() {
   return (
     <div className="mx-auto max-w-3xl px-4">
-      <h1 className="text-3xl font-bold mb-6">Sec 3- Life Experiences of Dr. Roderick “Rod” MacPherson</h1>
+      <h1 className="text-3xl font-bold mb-6">Life Experiences of Dr. Roderick “Rod” MacPherson</h1>
 
       <p className="mb-4 leading-7">My wife and I have lived in Montevallo for 40+ years.  </p>
 
