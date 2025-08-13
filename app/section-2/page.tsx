@@ -43,7 +43,7 @@ export default function Section2Page() {
       </p>
 
       <p className="mb-4 leading-7">
-        Mayor Nix’s reasons for not investigating possible criminal wrongdoing at City Hall or calling for a forensic audit that was too costly are deceptive arguments. (1) The investigation could have been carried out by detectives from Montevallo’s own police department at no cost to the taxpayers. (2) A forensic audit could have been used to identify financial problems at City Hall for a small fraction of the $70,000 cost that Mayor Nix mentioned. The average salary for an accountant with CPA certification in 2019 was $165 per hour in Alabama. (3) Since the forensic auditor could simply read through the already published annual auditor’s reports to uncover the financial problems, the time required to complete his examination would be substantially shortened. Page 1
+        Mayor Nix’s reasons for not investigating possible criminal wrongdoing at City Hall or calling for a forensic audit that was too costly are deceptive arguments. (1) The investigation could have been carried out by detectives from Montevallo’s own police department at no cost to the taxpayers. (2) A forensic audit could have been used to identify financial problems at City Hall for a small fraction of the $70,000 cost that Mayor Nix mentioned. The average salary for an accountant with CPA certification in 2019 was $165 per hour in Alabama. (3) Since the forensic auditor could simply read through the already published annual auditor’s reports to uncover the financial problems, the time required to complete his examination would be substantially shortened.
       </p>
 
       <p className="mb-4 leading-7">

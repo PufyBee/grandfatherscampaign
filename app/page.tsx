@@ -59,12 +59,6 @@ export default function Page() {
       </h2>
       <p className="mb-6">Mayor Nix has long ignored Montevallo’s dangerous drinking water.</p>
 
-      <div className="space-y-2 mb-6">
-        <p>Mayor Nix’s False and Misleading statements (2019-2025)</p>
-        <p>Dr. Roderick MacPherson’s professional qualification to be mayor.</p>
-        <p>(4) General questions for Montevallo’s residents</p>
-      </div>
-
       <p className="mb-4 leading-7">
         Mayor Russell “Rusty” Nix swore to an Oath of Office to be HONEST, and with that oath, the mayor has the moral
         and legal responsibility to protect the personal health, safety, and well-being of the residents of Montevallo
